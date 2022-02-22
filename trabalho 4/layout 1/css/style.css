@@ -1,0 +1,49 @@
+body {
+    color: #ffffff;
+    background-color: #ffd902;
+}
+
+.item {
+    border: solid 5px hsl(219, 96%, 35%);
+    background-color: #dddddd;
+    text-align: center;
+    padding: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 150px 80px 350px 150px;
+    grid-template-areas: "cabecalho cabecalho cabecalho cabecalho" 
+    "menu menu menu menu"
+     " bloc-esq bloc-esq bloc-esq bloc-dir"
+      "rodape rodape rodape rodape";
+}
+
+
+/* Nome das áreas */
+
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: #ffffff;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #ffffff;
+}
+
+.bloc-esq {
+    grid-area: bloc-esq;
+    background-color: #ffffff;
+}
+
+.bloc-dir {
+    grid-area: bloc-dir;
+    background-color: #ffffff;
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: #ffffff;
+}
